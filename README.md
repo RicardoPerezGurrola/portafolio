@@ -53,23 +53,18 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 ## 💼 Proyectos Destacados
 
-### 🌟 [Proyecto 1: Sistema de Gestión Web]
-- **Descripción**: Aplicación web completa para gestión empresarial
-- **Tecnologías**: React, Node.js, MongoDB, Express
+### 🌟 [Proyecto 1: Control de Inventarios de Botellas]
+- **Descripción**: Toda una aplicacion para llevar conrol de merma de las botellas de alcohol
+- **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
+- **Características**: Autenticación, Dashboard interactivo, API REST
+- **Estado**: ✅ Completado
+- 
+### 🌟 [Proyecto 1: Control de Inventarios de Botellas]
+- **Descripción**: Toda una aplicacion para llevar conrol de merma de las botellas de alcohol
+- **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
 - **Características**: Autenticación, Dashboard interactivo, API REST
 - **Estado**: ✅ Completado
 
-### 🌟 [Proyecto 2: Aplicación Móvil]
-- **Descripción**: App móvil multiplataforma para servicios locales
-- **Tecnologías**: React Native, Firebase, Redux
-- **Características**: Geolocalización, Chat en tiempo real, Notificaciones push
-- **Estado**: 🚧 En desarrollo
-
-### 🌟 [Proyecto 3: E-commerce Platform]
-- **Descripción**: Plataforma de comercio electrónico moderna
-- **Tecnologías**: Vue.js, Laravel, MySQL, Stripe API
-- **Características**: Carrito de compras, Pagos online, Panel de administración
-- **Estado**: ✅ Completado
 
 ---
 
@@ -77,8 +72,6 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 ### 🎓 Educación Formal
 - **Ingeniería en Sistemas Computacionales** - [Universidad/Instituto]
-- **Diplomado en Desarrollo Web** - [Institución]
-
 ### 📜 Certificaciones
 - 🏆 **Certificación Full Stack Developer** - [Plataforma]
 - 🏆 **AWS Certified Developer** - Amazon Web Services
