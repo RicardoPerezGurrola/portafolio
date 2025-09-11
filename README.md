@@ -55,10 +55,10 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 - **Características**: Autenticación, Dashboard interactivo, API REST
 - **Estado**: ✅ Completado
 - 
-### 🌟 [Proyecto 1: Control de Inventarios de Botellas]
-- **Descripción**: Toda una aplicacion para llevar conrol de merma de las botellas de alcohol
+### 🌟 [Proyecto 2: Implementaciones API en conjunto con SW SoftRestaurant]
+- **Descripción**: Aplicacion web para consultar detalles de ventas e Insumos
 - **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
-- **Características**: Autenticación, Dashboard interactivo, API REST
+- **Características**: API REST
 - **Estado**: ✅ Completado
 
 
@@ -67,7 +67,7 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 ## 📚 Educación y Certificaciones
 
 ### 🎓 Educación Formal
-- **Ingeniería en Sistemas Computacionales** - [Universidad/Instituto]
+- **Ingeniería en Sistemas Computacionales** - Instituto Tecnologico Superior De Irapuato
 ### 📜 Certificaciones
 - 🏆 **Certificación Full Stack Developer** - [Plataforma]
 - 🏆 **AWS Certified Developer** - Amazon Web Services
