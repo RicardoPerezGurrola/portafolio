@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=2E8B57&center=true&width=500&lines=Desarrollador+Full+Stack;Programador+Apasionado;Creador+de+Soluciones)
+  ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=2E8B57&center=true&width=500&lines=Desarrollador+Full+Stack;Desarrollador+Full-Stack;Creador+de+Soluciones)
   
   [![GitHub followers](https://img.shields.io/github/followers/RicardoPerezGurrola?style=social)](https://github.com/RicardoPerezGurrola)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ricardo-perez-gurrola)
