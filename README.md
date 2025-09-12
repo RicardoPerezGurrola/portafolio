@@ -101,7 +101,6 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 ### Desarrollo Backend
 - ✅ API REST Design
-- ✅ Microservicios Architecture
 - ✅ Database Design
 - ✅ Authentication & Authorization
 - ✅ Server Deployment
@@ -110,13 +109,6 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 </td>
 </tr>
 </table>
-
-### Metodologías y Prácticas
-- 🔄 **Agile/Scrum**: Experiencia en equipos ágiles
-- 🔄 **Git Flow**: Control de versiones profesional
-- 🔄 **TDD/BDD**: Desarrollo guiado por pruebas
-- 🔄 **CI/CD**: Integración y despliegue continuo
-- 🔄 **Code Review**: Revisión y mentoreo de código
 
 ---
 
@@ -146,16 +138,6 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
   - React Native y Flutter
   - Publicación en stores
 
-- ☁️ **Consultoría Técnica**
-  - Arquitectura de software
-  - Migración a la nube
-  - Optimización de rendimiento
-
-- 🎓 **Mentoreo y Enseñanza**
-  - Clases particulares de programación
-  - Code review y mejores prácticas
-  - Preparación para entrevistas técnicas
-
 ---
 
 ## 📫 Contacto
@@ -164,7 +146,7 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 ### ¡Conectemos y construyamos algo increíble juntos!
 
-📧 **Email**: [tu-email@gmail.com](mailto:tu-email@gmail.com)  
+📧 **Email**: [richygunz88@gmail.com](mailto:richygunz88@gmail.com)  
 💼 **LinkedIn**: [linkedin.com/in/ricardo-perez-gurrola](https://linkedin.com/in/ricardo-perez-gurrola)  
 🐱 **GitHub**: [github.com/RicardoPerezGurrola](https://github.com/RicardoPerezGurrola)  
 🌐 **Portfolio Web**: [tu-portfolio.com](https://tu-portfolio.com)  
