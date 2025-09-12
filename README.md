@@ -18,9 +18,8 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 - 🔭 Actualmente trabajando en proyectos de desarrollo web moderno
 - 🌱 Aprendiendo constantemente nuevas tecnologías y mejores prácticas
-- 👯 Busco colaborar en proyectos open source
-- 💬 Pregúntame sobre desarrollo web, móvil y arquitectura de software
-- ⚡ Dato curioso: Me encanta resolver problemas complejos con código elegante
+- 👯 Busco colaborar en cualquier proyecto
+- 💬 Pregúntame sobre desarrollo web
 
 ---
 
