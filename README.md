@@ -36,7 +36,7 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 ### Bases de Datos
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://dev.mysql.com/doc/)
 [![MongoDB](https://skillicons.dev/icons?i=mongodb)](https://www.mongodb.com/docs/)
-[![SQL Server](https://badgen.net/badge/SQL%20Server/CC2927?icon=microsoftsqlserver&label&labelColor=000000)](https://learn.microsoft.com/es-es/sql/sql-server/)
+[![SQL Server](https://skillicons.dev/icons?i=sqlserver)](https://learn.microsoft.com/es-es/sql/sql-server/)
 ### Herramientas y Plataformas
 [![Vite](https://skillicons.dev/icons?i=vite)](https://vitejs.dev/)
 [![Git](https://skillicons.dev/icons?i=git)](https://git-scm.com/doc)
@@ -51,7 +51,7 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 - **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
 - **Características**: Autenticación, Dashboard interactivo, API REST
 - **Estado**: ✅ Completado
-- 
+
 ### 🌟 [Proyecto 2: Implementaciones API en conjunto con SW SoftRestaurant]
 - **Descripción**: Aplicacion web para consultar detalles de ventas e Insumos
 - **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
