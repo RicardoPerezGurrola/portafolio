@@ -147,10 +147,10 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 ### ¡Conectemos y construyamos algo increíble juntos!
 
 📧 **Email**: [richygunz88@gmail.com](mailto:richygunz88@gmail.com)  
-💼 **LinkedIn**: [linkedin.com/in/ricardo-perez-gurrola](https://linkedin.com/in/ricardo-perez-gurrola)  
+💼 **LinkedIn**: [linkedin.com/in/ricardo-p%C3%A9rez-gurrola-6aa43a36b/](https://www.linkedin.com/in/ricardo-p%C3%A9rez-gurrola-6aa43a36b/)  
 🐱 **GitHub**: [github.com/RicardoPerezGurrola](https://github.com/RicardoPerezGurrola)  
 🌐 **Portfolio Web**: [tu-portfolio.com](https://tu-portfolio.com)  
-📱 **WhatsApp**: [+52 XXX XXX XXXX](https://wa.me/52XXXXXXXXXX)  
+📱 **WhatsApp**: [+52 464 175 6034](https://wa.me/524641756034)  
 
 </div>
 
