@@ -38,8 +38,7 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 ### Bases de Datos
 [![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/doc/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/docs/)
-[![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](https://learn.microsoft.com/es-es/sql/sql-server/)
-
+[![SQL Server](https://img.shields.io/static/v1?style=for-the-badge&message=SQL%20Server&color=CC2927&logo=microsoft-sql-server&logoColor=white)](https://learn.microsoft.com/es-es/sql/sql-server/)
 ### Herramientas y Plataformas
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/doc)
