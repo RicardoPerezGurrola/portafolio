@@ -1,9 +1,10 @@
-/* Importar estilos principales */
-@import url('./styles/main.css');
-
 /* Importar fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Importar estilos principales */
+@import url('./styles/main.css');
+
+/* Estilos adicionales */
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
