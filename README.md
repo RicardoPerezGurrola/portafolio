@@ -23,19 +23,25 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 ---
 
-## 🛠️ Tecnologías y Herramientas
-
 ### Frontend
-<p align="left"> <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=html,css,javascript,react" alt="frontend-dev-icons" /> </a></p>
+[![HTML5](https://skillicons.dev/icons?i=html)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://skillicons.dev/icons?i=javascript)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![React](https://skillicons.dev/icons?i=react)](https://es.react.dev/)
 
 ### Backend
-<p align="left"> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=nodejs,express" alt="backend-dev-icons" /> </a></p>
+[![Node.js](https://skillicons.dev/icons?i=nodejs)](https://nodejs.org/en/docs)
+[![Express.js](https://skillicons.dev/icons?i=express)](https://expressjs.com/)
 
 ### Bases de Datos
-<p align="left"> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlserver" alt="database-dev-icons" /> </a></p>
+[![MySQL](https://skillicons.dev/icons?i=mysql)](https://dev.mysql.com/doc/)
+[![MongoDB](https://skillicons.dev/icons?i=mongodb)](https://www.mongodb.com/docs/)
+[![SQL Server](https://skillicons.dev/icons?i=sqlserver)](https://learn.microsoft.com/es-es/sql/sql-server/)
 
 ### Herramientas y Plataformas
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=git,vscode,vite" alt="tools-dev-icons" /> </a></p>
+[![Vite](https://skillicons.dev/icons?i=vite)](https://vitejs.dev/)
+[![Git](https://skillicons.dev/icons?i=git)](https://git-scm.com/doc)
+[![VS Code](https://skillicons.dev/icons?i=vscode)](https://code.visualstudio.com/docs)
 
 ---
 
