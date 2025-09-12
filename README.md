@@ -130,13 +130,8 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 - 💻 **Desarrollo Web Full Stack**
   - Aplicaciones web modernas y responsivas
-  - APIs REST y GraphQL
+  - APIs REST
   - Integración de bases de datos
-
-- 📱 **Desarrollo Móvil**
-  - Apps nativas e híbridas
-  - React Native y Flutter
-  - Publicación en stores
 
 ---
 
