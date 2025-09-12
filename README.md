@@ -73,17 +73,10 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 ### 🎓 Educación Formal
 - **Ingeniería en Sistemas Computacionales** - Instituto Tecnologico Superior De Irapuato
+  
 ### 📜 Certificaciones
-- 🏆 **Certificación Full Stack Developer** - [Plataforma]
-- 🏆 **AWS Certified Developer** - Amazon Web Services
-- 🏆 **Google Cloud Professional** - Google Cloud Platform
-- 🏆 **React Developer Certification** - Meta
 
 ### 📖 Cursos y Especializaciones
-- Advanced JavaScript & ES6+
-- Microservicios con Docker y Kubernetes
-- Desarrollo Móvil con React Native
-- Machine Learning Fundamentals
 
 ---
 ## 🏆 Skills y Competencias
