@@ -38,7 +38,7 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://dev.mysql.com/doc/)
 [![MongoDB](https://skillicons.dev/icons?i=mongodb)](https://www.mongodb.com/docs/)
 <a href="https://learn.microsoft.com/es-es/sql/sql-server/" target="_blank" rel="noreferrer">
-    <img src="https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000" width="48" height="48">
+  <img src="https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000" width="48" height="48">
 </a>
 
 <div style="background-image: url('https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000'); background-color: white; width: 48px; height: 48px; background-repeat: no-repeat; background-position: center;">
@@ -86,12 +86,16 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 - Machine Learning Fundamentals
 
 ---
-
 ## 🏆 Skills y Competencias
 
+<table align="center">
+  <tr>
+    <td>
+
+
 <table>
-<tr>
-<td width="50%">
+  <tr>
+    <td width="50%">
 
 ### Desarrollo Frontend
 - ✅ Responsive Web Design
@@ -113,6 +117,9 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 
 </td>
 </tr>
+</table>
+
+  </tr>
 </table>
 
 ---
