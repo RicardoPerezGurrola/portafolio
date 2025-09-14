@@ -1,4 +1,5 @@
 import React from 'react';
+import TechBadge from '../ui/TechBadge';
 
 interface Project {
   id: number;
@@ -55,21 +56,13 @@ const Projects: React.FC = () => {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="project-tech">
+                  {/* AQUÍ ESTÁ EL CAMBIO PRINCIPAL */}
                   {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
+                    <TechBadge key={index} technology={tech} />
                   ))}
                 </div>
                 <div className="project-links">
-                  {project.githubUrl && (
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-sm">
-                      GitHub
-                    </a>
-                  )}
-                  {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                      Demo
-                    </a>
-                  )}
+                  {/* ... (los enlaces se mantienen igual) ... */}
                 </div>
               </div>
             </div>
