@@ -1,5 +1,7 @@
 // src/data/technologyData.ts
-import { SiReact, SiTypescript, SiCss3, SiJavascript, SiHtml5, SiNodedotjs, SiMongodb } from 'react-icons/si';
+import { SiReact, SiTypescript, SiCss3, SiJavascript, SiHtml5, SiNodedotjs, SiMongodb, SiMysql, SiExpress, SiTailwindcss, SiFigma, SiGit, SiWebpack } from 'react-icons/si';
+import { DiMsqlServer, DiDatabase } from 'react-icons/di';
+import { VscCode } from 'react-icons/vsc';
 import type { IconType } from 'react-icons';
 
 export interface TechInfo {
@@ -53,5 +55,63 @@ export const technologyMap = new Map<string, TechInfo>([
     color: '#47A248',
     textColor: '#FFFFFF',
     icon: SiMongodb
-  }]
+  }],
+  ['express', {
+    name: 'Express.js',
+    color: '#000000',      // Color oficial de Express
+    textColor: '#FFFFFF',
+    icon: SiExpress
+  }],
+  ['sql server', {
+    name: 'SQL Server',
+    color: '#CC2927',      // Color oficial de SQL Server
+    textColor: '#FFFFFF',
+    icon: DiMsqlServer
+  }],
+  ['mysql', {
+    name: 'MySQL',
+    color: '#4479A1',
+    textColor: '#FFFFFF',
+    icon: SiMysql
+  }],
+  ['tailwind css', {
+    name: 'Tailwind CSS',
+    color: '#06B6D4',      // Color oficial de Tailwind
+    textColor: '#FFFFFF',
+    icon: SiTailwindcss
+  }],
+  ['git', {
+    name: 'Git',
+    color: '#F05032',
+    textColor: '#FFFFFF',
+    icon: SiGit
+  }],
+
+  // --- ENTRADA CORREGIDA ---
+  ['vs code', {
+    name: 'VS Code',
+    color: '#007ACC',
+    textColor: '#FFFFFF',
+    icon: VscCode // <-- 2. ICONO CORRECTO
+  }],
+  // -------------------------
+
+  ['webpack', {
+    name: 'Webpack',
+    color: '#8DD6F9',
+    textColor: '#000000',
+    icon: SiWebpack
+  }],
+  ['figma', {
+    name: 'Figma',
+    color: '#F24E1E',
+    textColor: '#FFFFFF',
+    icon: SiFigma
+  }],
+  ['sql', {
+    name: 'SQL',
+    color: '#4479A1',
+    textColor: '#FFFFFF',
+    icon: DiDatabase
+  }],
 ]);

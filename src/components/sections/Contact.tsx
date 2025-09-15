@@ -18,9 +18,9 @@ const Contact: React.FC = () => {
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | ''>('');
 
   const contactInfo = [
-    { icon: '📧', label: 'Email', value: 'tu.email@ejemplo.com' },
-    { icon: '📱', label: 'Teléfono', value: '+34 123 456 789' },
-    { icon: '📍', label: 'Ubicación', value: 'Tu Ciudad, País' }
+    { icon: '📧', label: 'Email', value: 'richygunz88@gmail.com' },
+    { icon: '📱', label: 'Teléfono', value: '+52 464 175 6034' },
+    { icon: '📍', label: 'Ubicación', value: 'Irapuato GTO, México' }
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

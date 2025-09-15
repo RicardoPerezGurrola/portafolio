@@ -1,8 +1,10 @@
+// Hero.tsx
 import React from 'react';
+import { scrollToSection } from '../../utils/scroll'; // <-- Importa la función compartida
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero" >
+    <section className="hero">
       <div className="container">
         <div className="hero-content">
           <div className="hero-image">
@@ -17,9 +19,18 @@ const Hero: React.FC = () => {
               Me especializo en React, TypeScript y diseño web responsive.
             </p>
             <div className="hero-buttons">
-              <a href="#proyectos" className="btn btn-success">Ver Proyectos</a>
-              <a href="#contacto" className="btn btn-success">Contactar</a>
-              <a href="/CV_Ricardo_Perez_Gurrola.pdf" download className="btn btn-success">Descargar CV</a>
+              <button onClick={() => scrollToSection('habilidades')} className="btn btn-secondary">
+                Ver Habilidades
+              </button>
+              <button onClick={() => scrollToSection('proyectos')} className="btn btn-primary">
+                Ver Proyectos
+              </button>
+              <button onClick={() => scrollToSection('contacto')} className="btn btn-primary">
+                Contactar
+              </button>
+              <button className="btn btn-success">
+                Descargar CV
+              </button>
             </div>
           </div>
         </div>

@@ -16,29 +16,20 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Proyecto 1',
-      description: 'Descripción del proyecto 1. Aquí puedes explicar de qué trata el proyecto y cuál fue tu contribución.',
-      image: '/images/project1.svg',
-      technologies: ['React', 'TypeScript', 'CSS'],
+      title: 'Integraciones API a SW Soft Restaurant',
+      description: 'Se realizo una aplicacion que tuviera los detalles exactos de las ventas e insumos, ya sea por periodos o por mes, y que se pudiera ver en tiempo real, todo esto con una API Rest, realizada con node.js express, JS Vanilla y CSS Puro y la BD de Soft Restaurant, que esta con SQL Server',
+      image: '/assets/images/Integraciones_API_SR.svg',
+      technologies: ['Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'SQL Server'],
       githubUrl: 'https://github.com/username/project1',
       liveUrl: 'https://project1-demo.com'
     },
     {
       id: 2,
-      title: 'Proyecto 2',
-      description: 'Descripción del proyecto 2. Destaca las características principales y los desafíos que superaste.',
+      title: 'Control de botellas',
+      description: 'Se realizo una aplicacion en la cual se pudiera llevar un control de el contenido y control de lotes de una variedad de botellas alcoholicas,sabiendo el numero de OZ, ML y % restantes de cada botela con un ID interno por cada botella para identifiarlas, asi como tambien el costo por OZ Y ML de cada una. Para el front se utilizo Java Script, HTML Y TAILWINDCSS en conjunto con la libteria Daisy UI para el diseño de la pagina Y para la parte de el bakend se utilizo Node.js con el framework de Express.js',
       image: '/images/project2.svg',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'SQL Server', 'Tailwind CSS'],
       githubUrl: 'https://github.com/username/project2'
-    },
-    {
-      id: 3,
-      title: 'Proyecto 3',
-      description: 'Descripción del proyecto 3. Menciona las tecnologías utilizadas y el propósito del proyecto.',
-      image: '/images/project3.svg',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      githubUrl: 'https://github.com/username/project3',
-      liveUrl: 'https://project3-demo.com'
     }
   ];
 

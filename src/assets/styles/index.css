@@ -1,8 +1,9 @@
 /* Importar fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Importar estilos principales */
-@import url('./styles/main.css');
+@import url('./main.css');
 
 /* Estilos adicionales */
 button:focus,
