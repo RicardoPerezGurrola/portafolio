@@ -1,22 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// App.tsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+// Elimina las siguientes líneas que causan el error:
+// import ProjectsPage from "./pages/ProjectsPage";
+// import SkillsPage from "./pages/SkillsPage";
+// import ContactPage from "./pages/ContactPage";
 
-// Páginas
-import Home from './pages/Home'
-import ProjectsPage from './pages/ProjectsPage'
-import SkillsPage from './pages/SkillsPage'
-import ContactPage from './pages/ContactPage'
-
-function App() {
+const App: React.FC = () => {
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/proyectos" element={<ProjectsPage />} />
-        <Route path="/habilidades" element={<SkillsPage />} />
-        <Route path="/contacto" element={<ContactPage />} />
+        {/* Si quieres que las secciones tengan sus propias páginas, asegúrate de que existan */}
+        {/* <Route path="/proyectos" element={<ProjectsPage />} /> */}
+        {/* <Route path="/habilidades" element={<SkillsPage />} /> */}
+        {/* <Route path="/contacto" element={<ContactPage />} /> */}
       </Routes>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;
