@@ -9,7 +9,8 @@ import Home from "./pages/Home";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL} 
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Si quieres que las secciones tengan sus propias páginas, asegúrate de que existan */}

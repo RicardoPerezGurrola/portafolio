@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
       <div className="container">
         <div className="hero-content">
           <div className="hero-image">
-            <img src="/images/profile.svg" alt="Foto de perfil" />
+            <img src={`${import.meta.env.BASE_URL}images/profile.svg`} alt="Foto de perfil" />
           </div>
           <div className="hero-text">
             <h1 style={h1Style} className="typing-container">
