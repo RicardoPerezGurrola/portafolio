@@ -1,5 +1,5 @@
 // Hero.tsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { scrollToSection } from '../../utils/scroll';
 
 const Hero: React.FC = () => {
