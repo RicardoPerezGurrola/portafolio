@@ -1,176 +1,99 @@
-# 👋 ¡Hola! Soy Ricardo Pérez Gurrola
+# Mi Portafolio Personal - Ricardo Pérez Gurrola
 
-<div align="center">
-  
-  ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=2E8B57&center=true&width=500&lines=Desarrollador+Full-Stack;Creador+de+Soluciones)
-  
-  [![GitHub followers](https://img.shields.io/github/followers/RicardoPerezGurrola?style=social)](https://github.com/RicardoPerezGurrola)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardo-p%C3%A9rez-gurrola-6aa43a36b/)
-  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:richygunz88@gmail.com)
-  
-</div>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
----
-
-## 🚀 Sobre Mí
-
-Soy un **desarrollador full stack** apasionado por la tecnología y la creación de soluciones innovadoras. Mi objetivo es construir aplicaciones web y móviles que generen un impacto positivo en la vida de las personas.
-
-- 🔭 Actualmente trabajando en proyectos de desarrollo web moderno
-- 🌱 Aprendiendo constantemente nuevas tecnologías y mejores prácticas
-- 👯 Busco colaborar en cualquier proyecto
-- 💬 Pregúntame sobre desarrollo web
-
----
-
-
-### Frontend
-[![HTML5](https://skillicons.dev/icons?i=html)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![JavaScript](https://skillicons.dev/icons?i=javascript)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[![React](https://skillicons.dev/icons?i=react)](https://es.react.dev/)
-[![TailwindCSS](https://skillicons.dev/icons?i=tailwind)](https://tailwindcss.com/)
-<a href="https://daisyui.com/" target="_blank" rel="noreferrer">
-  <img src="https://img.daisyui.com/images/daisyui/daisyui-logo-2000.png" width="48" height="48">
-</a>
-[![Boostrap](https://skillicons.dev/icons?i=bootstrap)](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+Este es el repositorio de mi portafolio personal, un proyecto construido desde cero para mostrar mis habilidades como Desarrollador Full-Stack, mis proyectos y mi experiencia en la creación de interfaces de usuario modernas y responsivas.
 
 
 
-### Backend
-[![Node.js](https://skillicons.dev/icons?i=nodejs)](https://nodejs.org/en/docs)
-[![Express.js](https://skillicons.dev/icons?i=express)](https://expressjs.com/)
-[![Nest.js](https://skillicons.dev/icons?i=nestjs)](https://docs.nestjs.com/)
+## 📜 Descripción
 
+Este portafolio es una Single Page Application (SPA) desarrollada con React y TypeScript, diseñada para ofrecer una experiencia de usuario fluida y atractiva. La aplicación presenta una animación de escritura en la sección principal, tarjetas de proyecto dinámicas, y una visualización de habilidades con badges personalizadas que incluyen los logos y colores de cada tecnología.
 
-### Bases de Datos
-[![MySQL](https://skillicons.dev/icons?i=mysql)](https://dev.mysql.com/doc/)
-[![MongoDB](https://skillicons.dev/icons?i=mongodb)](https://www.mongodb.com/docs/)
-<a href="https://learn.microsoft.com/es-es/sql/sql-server/" target="_blank" rel="noreferrer">
-  <img src="https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000" width="48" height="48">
-</a>
+## ✨ Características Principales
 
-<div style="background-image: url('https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000'); background-color: white; width: 48px; height: 48px; background-repeat: no-repeat; background-position: center;">
-</div>
+- **Animación de Escritura:** Efecto de tipeo dinámico en el título principal.
+- **Componentes Reutilizables:** Creación de componentes modulares como `TechBadge` para una fácil escalabilidad.
+- **Diseño Responsivo (Mobile-First):** La interfaz se adapta a cualquier tamaño de pantalla, desde móviles hasta escritorios.
+- **Navegación Fluida:** Header fijo y scroll suave entre secciones.
+- **Paleta de Colores Personalizada:** Un sistema de diseño basado en CSS Custom Properties (variables) para una fácil personalización y consistencia.
+- **Iconos Dinámicos:** Integración con `react-icons` para mostrar logos de tecnologías de forma dinámica.
 
-### Herramientas y Plataformas
-[![Vite](https://skillicons.dev/icons?i=vite)](https://vitejs.dev/)
-[![Git](https://skillicons.dev/icons?i=git)](https://git-scm.com/doc)
-[![VS Code](https://skillicons.dev/icons?i=vscode)](https://code.visualstudio.com/docs)
+## 🛠️ Tech Stack (Tecnologías Utilizadas)
 
+- **Frontend:** React, TypeScript, Vite
+- **Enrutamiento:** React Router DOM v6
+- **Estilos:** CSS puro con Custom Properties y enfoque Mobile-First.
+- **Iconos:** React Icons
 
----
+## 📂 Estructura de Carpetas
 
-## 💼 Proyectos Destacados
+El proyecto sigue una estructura organizada para separar responsabilidades, facilitando el mantenimiento y la escalabilidad.
 
-### 🌟 [Proyecto 1: Control de Inventarios de Botellas]
-- **Descripción**: Toda una aplicacion para llevar conrol de merma de las botellas de alcohol
-- **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
-- **Características**: Autenticación, Dashboard interactivo, API REST
-- **Estado**: ✅ Completado
+```
+/
+├── public/
+│   └── images/           # Contiene todas las imágenes estáticas del proyecto
+├── src/
+│   ├── assets/
+│   │   └── styles/
+│   ├── components/
+│   │   ├── layout/
+│   │   ├── sections/
+│   │   └── ui/
+│   ├── data/
+│   ├── pages/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+└── README.md
+```
 
-### 🌟 [Proyecto 2: Implementaciones API en conjunto con SW SoftRestaurant]
-- **Descripción**: Aplicacion web para consultar detalles de ventas e Insumos
-- **Tecnologías**: JavaScriptVanilla, Node.js, SQLServer, Express
-- **Características**: API REST
-- **Estado**: ✅ Completado
+## 🏛️ Arquitectura y Protocolos
 
+### Arquitectura de Componentes
+La aplicación está construida sobre una arquitectura de componentes basada en React. Se ha seguido un principio de separación de responsabilidades:
+- **Componentes `Layout`:** Definen la estructura principal y persistente de la aplicación (Header, Footer).
+- **Componentes `Page`:** Ensamblan diferentes componentes de sección para construir una vista completa.
+- **Componentes `UI`:** Son los "ladrillos" más pequeños y reutilizables (`TechBadge`), diseñados para ser agnósticos a la lógica de negocio.
 
----
+### Protocolo de Estilos (Styling)
+- **Mobile-First:** Los estilos base están definidos para la experiencia móvil. Se utilizan `media queries` (`min-width`) para adaptar y mejorar la interfaz en pantallas más grandes (tablets y escritorio).
+- **CSS Custom Properties:** Todo el sistema de colores se gestiona a través de variables CSS definidas en `:root`. Esto permite un theming rápido y asegura consistencia en todo el sitio.
+- **Clases de Utilidad y Componentes:** Se utiliza un enfoque mixto, con clases de componentes específicas (`.project-card`) y clases de utilidad (`.container`).
 
-## 📚 Educación y Certificaciones
+## 🚀 Cómo Empezar
 
-### 🎓 Educación Formal
-- **Ingeniería en Sistemas Computacionales** - Instituto Tecnologico Superior De Irapuato
-  
-### 📜 Certificaciones
+Para correr este proyecto en tu máquina local, sigue estos pasos:
 
-### 📖 Cursos y Especializaciones
+1. **Clona el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+   ```
 
----
-## 🏆 Skills y Competencias
+2. **Navega a la carpeta del proyecto:**
+   ```bash
+   cd tu-repositorio
+   ```
 
-<table align="center">
-  <tr>
-    <td>
+3. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
 
-
-<table>
-  <tr>
-    <td width="50%">
-
-### Desarrollo Frontend
-- ✅ Responsive Web Design
-- ✅ Single Page Applications (SPA)
-- ✅ Progressive Web Apps (PWA)
-- ✅ UI/UX Implementation
-- ✅ State Management
-- ✅ Performance Optimization
-
-</td>
-<td width="50%">
-
-### Desarrollo Backend
-- ✅ API REST Design
-- ✅ Database Design
-- ✅ Authentication & Authorization
-- ✅ Server Deployment
-- ✅ Testing & Debugging
-
-</td>
-</tr>
-</table>
-
-  </tr>
-</table>
+4. **Inicia el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   La aplicación estará disponible en `http://localhost:5173` (o el puerto que Vite indique).
 
 ---
-
-## 📊 Estadísticas de GitHub
-
-<div align="center">
-  
-  ![Ricardo's GitHub stats](https://github-readme-stats.vercel.app/api?username=RicardoPerezGurrola&show_icons=true&theme=tokyonight)
-  
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RicardoPerezGurrola&layout=compact&theme=tokyonight)
-  
-  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=RicardoPerezGurrola&theme=tokyonight)
-  
-</div>
-
----
-
-## 🤝 Servicios que Ofrezco
-
-- 💻 **Desarrollo Web Full Stack**
-  - Aplicaciones web modernas y responsivas
-  - APIs REST
-  - Integración de bases de datos
-
----
-
-## 📫 Contacto
-
-<div align="center">
-
-### ¡Conectemos y construyamos algo increíble juntos!
-
-📧 **Email**: [richygunz88@gmail.com](mailto:richygunz88@gmail.com)  
-💼 **LinkedIn**: [linkedin.com/in/ricardo-p%C3%A9rez-gurrola-6aa43a36b/](https://www.linkedin.com/in/ricardo-p%C3%A9rez-gurrola-6aa43a36b/)  
-🐱 **GitHub**: [github.com/RicardoPerezGurrola](https://github.com/RicardoPerezGurrola)  
-🌐 **Portfolio Web**: [tu-portfolio.com](https://tu-portfolio.com)  
-📱 **WhatsApp**: [+52 464 175 6034](https://wa.me/524641756034)  
-
-</div>
-
----
-
-<div align="center">
-  
-  ### 💡 "El código es como el humor. Cuando tienes que explicarlo, es malo." - Cory House
-  
-  **⭐ Si te gusta mi trabajo, no olvides darle una estrella a mis repositorios ⭐**
-  
-  ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=RicardoPerezGurrola.RicardoPerezGurrola)
-  
-</div>
+Creado por **Ricardo Pérez Gurrola**.
