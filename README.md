@@ -3,7 +3,7 @@
 [![React](https://skillicons.dev/icons?i=react)](https://es.react.dev/)
 [![TypeScript](https://skillicons.dev/icons?i=ts)](https://www.typescriptlang.org/docs/)
 [![Vite](https://skillicons.dev/icons?i=vite)](https://vitejs.dev/)
-[![CSS3](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/es/docs/Web/CSS)}
+[![CSS3](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/es/docs/Web/CSS)
 [![HTML5](https://skillicons.dev/icons?i=html)](https://developer.mozilla.org/es/docs/Web/HTML)
 
 Este es el repositorio de mi portafolio personal, un proyecto construido desde cero para mostrar mis habilidades como Desarrollador Full-Stack, mis proyectos y mi experiencia en la creación de interfaces de usuario modernas y responsivas.
