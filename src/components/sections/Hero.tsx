@@ -1,65 +1,60 @@
+// Hero.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import { scrollToSection } from '../../utils/scroll';
 
 const Hero: React.FC = () => {
   const phrases = [
     "Hola, soy Ricardo Pérez Gurrola",
-    "Hola, soy un desarrollador Full-Stack",
+    "Soy un desarrollador Full-Stack",
     "¡Bienvenido a mi portafolio!"
   ];
+  
+  const [phraseIndex, setPhraseIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const [phraseIndex, setPhraseIndex] = useState(0);
   const [typingFinished, setTypingFinished] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleTyping = () => {
       const currentPhrase = phrases[phraseIndex];
-      const speed = isDeleting ? 50 : 100; // Velocidad de escritura
-      const currentLength = displayText.length;
 
-      if (!isDeleting && currentLength < currentPhrase.length) {
-        setDisplayText(currentPhrase.substring(0, currentLength + 1));
-        setTypingFinished(false);
-        timeoutRef.current = setTimeout(handleTyping, speed);
-      } 
-      else if (isDeleting && currentLength > 0) {
-        setDisplayText(currentPhrase.substring(0, currentLength - 1));
-        setTypingFinished(false);
-        timeoutRef.current = setTimeout(handleTyping, speed);
-      } 
-      else if (!isDeleting && currentLength === currentPhrase.length) {
-        setTypingFinished(true);
-        timeoutRef.current = setTimeout(() => {
-          setIsDeleting(true);
-          setTypingFinished(false);
-          handleTyping();
-        }, 1500);
-      } 
-      else if (isDeleting && currentLength === 0) {
-        setIsDeleting(false);
-        setPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-        setTypingFinished(false);
-        timeoutRef.current = setTimeout(handleTyping, 500);
+      if (isDeleting) {
+        // Lógica para borrar
+        setDisplayText(prev => prev.substring(0, prev.length - 1));
+      } else {
+        // Lógica para escribir
+        setDisplayText(prev => currentPhrase.substring(0, prev.length + 1));
       }
     };
 
-    timeoutRef.current = setTimeout(handleTyping, 500);
+    const currentPhrase = phrases[phraseIndex];
+    const speed = isDeleting ? 50 : 50;
 
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, [displayText, isDeleting, phraseIndex]);
+    // Lógica para cambiar entre escribir y borrar
+    if (!isDeleting && displayText === currentPhrase) {
+      // Frase terminada, esperar y empezar a borrar
+      setTypingFinished(true);
+      setTimeout(() => {
+        setIsDeleting(true);
+        setTypingFinished(false);
+      }, 1500); // Pausa antes de borrar
+    } else if (isDeleting && displayText === '') {
+      // Borrado terminado, pasar a la siguiente frase
+      setIsDeleting(false);
+      setPhraseIndex(prevIndex => (prevIndex + 1) % phrases.length);
+    } else {
+      // Continuar escribiendo o borrando
+      const timeout = setTimeout(handleTyping, speed);
+      return () => clearTimeout(timeout); // Limpiar el timeout
+    }
 
-  // Se aplica el estilo white-space solo si la animación está activa
+  // --- LA CLAVE ESTÁ AQUÍ ---
+  // El efecto ahora solo depende de estas variables, no de 'displayText'
+  }, [displayText, isDeleting, phraseIndex, phrases]);
+
   const h1Style = {
     whiteSpace: typingFinished || isDeleting ? 'normal' : 'nowrap',
-    overflow: 'hidden',
-    fontSize: '3.5rem',
-    marginBottom: '1rem',
+    minHeight: '4.2rem', // Añadir altura mínima para evitar saltos de layout
   };
 
   return (
@@ -70,9 +65,9 @@ const Hero: React.FC = () => {
             <img src="/images/profile.svg" alt="Foto de perfil" />
           </div>
           <div className="hero-text">
-            <h1 style={h1Style}>
+            <h1 style={h1Style} className="typing-container">
               {displayText}
-              <span className={`cursor ${typingFinished ? 'blinking' : 'solid'}`}></span>
+              <span className={`cursor ${typingFinished ? 'blinking' : ''}`}></span>
             </h1>
             <h2>Desarrollador Full-Stack</h2>
             <p>

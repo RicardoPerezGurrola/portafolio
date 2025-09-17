@@ -33,12 +33,15 @@ Soy un **desarrollador full stack** apasionado por la tecnología y la creación
 <a href="https://daisyui.com/" target="_blank" rel="noreferrer">
   <img src="https://img.daisyui.com/images/daisyui/daisyui-logo-2000.png" width="48" height="48">
 </a>
+[![Boostrap](https://skillicons.dev/icons?i=bootstrap)](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
 
 ### Backend
 [![Node.js](https://skillicons.dev/icons?i=nodejs)](https://nodejs.org/en/docs)
 [![Express.js](https://skillicons.dev/icons?i=express)](https://expressjs.com/)
+[![Nest.js](https://skillicons.dev/icons?i=nestjs)](https://docs.nestjs.com/)
+
 
 ### Bases de Datos
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://dev.mysql.com/doc/)

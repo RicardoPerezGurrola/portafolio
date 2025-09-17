@@ -1,15 +1,30 @@
 // Header.tsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // <-- 1. Importa useEffect
 import { Link } from 'react-router-dom';
 import { scrollToSection } from '../../utils/scroll';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    // Cuando el menú se abre, añade la clase al body
+    if (isOpen) {
+      document.body.classList.add('menu-abierto');
+    } else {
+      // Cuando el menú se cierra, quita la clase del body
+      document.body.classList.remove('menu-abierto');
+    }
+
+    // Opcional: Función de limpieza para cuando el componente se desmonte
+    return () => {
+      document.body.classList.remove('menu-abierto');
+    };
+  }, [isOpen]); // Este efecto se ejecuta cada vez que 'isOpen' cambia
+
   const handleScroll = (e: React.MouseEvent, id: string) => {
     e.preventDefault();
     scrollToSection(id);
-    setIsOpen(false); // Cierra el menú al hacer clic en un enlace
+    setIsOpen(false); 
   };
   
   const toggleMenu = () => {
@@ -23,7 +38,6 @@ const Header: React.FC = () => {
           <a href="#" onClick={(e) => handleScroll(e, 'inicio')}>Mi Portafolio</a>
         </div>
 
-        {/* Botón de menú de hamburguesa */}
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>

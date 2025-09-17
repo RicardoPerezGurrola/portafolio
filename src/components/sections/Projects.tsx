@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: 'Integraciones API a SW Soft Restaurant',
       description: 'Se realizo una aplicacion que tuviera los detalles exactos de las ventas e insumos, ya sea por periodos o por mes, y que se pudiera ver en tiempo real, todo esto con una API Rest, realizada con node.js express, JS Vanilla y CSS Puro y la BD de Soft Restaurant, que esta con SQL Server',
-      image: '/assets/images/Integraciones_API_SR.svg',
+      image: '/images/Integraciones_API_SR.svg',
       technologies: ['Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'SQL Server'],
       githubUrl: 'https://github.com/username/project1',
       liveUrl: 'https://project1-demo.com'
