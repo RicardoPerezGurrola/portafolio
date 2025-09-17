@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react'; // <-- Añade useState aquí
 import TechBadge from '../ui/TechBadge';
+import ImageModal from '../ui/ImageModal';
 
 interface Project {
   id: number;
@@ -13,6 +14,8 @@ interface Project {
 
 const Projects: React.FC = () => {
   // Datos de ejemplo para proyectos
+  const [selectedImage, setSelectedImage] = useState<string | null>(null); // <-- Añade useState para la imagen seleccionada
+
   const projects: Project[] = [
     {
       id: 1,
@@ -40,14 +43,14 @@ const Projects: React.FC = () => {
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="project-image">
+              {/* 3. Añadimos un onClick a la imagen */}
+              <div className="project-image" onClick={() => setSelectedImage(project.image)}>
                 <img src={project.image} alt={project.title} />
               </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="project-tech">
-                  {/* AQUÍ ESTÁ EL CAMBIO PRINCIPAL */}
                   {project.technologies.map((tech, index) => (
                     <TechBadge key={index} technology={tech} />
                   ))}
@@ -60,6 +63,15 @@ const Projects: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* 4. Renderizamos el modal solo si hay una imagen seleccionada */}
+      {selectedImage && (
+        <ImageModal 
+          imageUrl={selectedImage}
+          altText="Vista ampliada del proyecto"
+          onClose={() => setSelectedImage(null)} // Función para cerrar el modal
+        />
+      )}
     </section>
   );
 };

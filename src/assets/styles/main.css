@@ -2,54 +2,40 @@
    VARIABLES GLOBALES Y TEMAS
    ========================================== */
 :root {
-  /* TEMA OSCURO (POR DEFECTO) */
-  --primary-color: #DDC7C7;            /* Rosa Pálido: Para botones, enlaces y acciones principales. */
-  --primary-color-rgb: 221, 199, 199;  /* Valores RGB del color primario. */
-  --secondary-color: #8A817C;          /* Taupe Suave: Para acciones secundarias o elementos menos importantes. */
-  --dark-color: #2E2E2E;               /* Carbón Oscuro: Para fondos de sección alternos y texto sobre fondos claros. */
-  --light-color: #F8F8F2;              /* Blanco Lino: El color principal para texto sobre fondos oscuros. */
-
-  /* Colores Semánticos */
-  --success-color: #84a98c;            /* Verde Salvia */
-  --danger-color: #d9846b;             /* Terracota Suave */
-  --warning-color: #e5b35b;            /* Ocre Dorado */
-  --info-color: #6a7a8f;               /* Azul Pizarra */
-
-  /* Variables de Sistema y Estilo */
-  --body-bg: #3e4434;                  /* TU COLOR DOMINANTE */
-  --text-color: #F8F8F2;               /* Blanco Lino */
-  --border-color: #515a46;             /* Verde más claro para bordes */
-  --footer-bg: #1A1A1A;                /* Negro Profundo */
+  /* TEMA OSCURO (POR DEFECTO) - COLORES ORIGINALES */
+  --primary-color: #DDC7C7;
+  --primary-color-rgb: 221, 199, 199;
+  --secondary-color: #8A817C;
+  --dark-color: #2E2E2E;
+  --light-color: #F8F8F2;
+  --success-color: #84a98c;
+  --danger-color: #d9846b;
+  --warning-color: #e5b35b;
+  --info-color: #6a7a8f;
+  --body-bg: #3e4434;
+  --text-color: #F8F8F2;
+  --border-color: #515a46;
+  --footer-bg: #1A1A1A;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  
-  /* Variables de Estilo */
   --transition: all 0.3s ease;
   --border-radius: 8px;
   --container-width: 1200px;
-  --header-height: 80px;               /* Altura del header para el padding */
+  --header-height: 80px;
 }
 
-/* TEMA CLARO MEJORADO ("TIERRA CLARA") */
+/* TEMA CLARO - COLORES ORIGINALES */
 body[data-theme='light'] {
-  /* Paleta Principal */
-  --primary-color: #B56576;      /* Rosa Intenso: Mantenemos el acento principal, tiene buen contraste. */
-  --secondary-color: #6D6561;    /* Taupe Intenso: Mantenemos el acento secundario. */
-  
-  /* El gran cambio: El texto ahora es un verde muy oscuro, conectando con el tema original */
+  --primary-color: #B56576;
+  --secondary-color: #6D6561;
   --text-color: #313728;
-  --light-color: #313728;      /* En tema claro, 'light-color' es el color de texto principal */
-
-  /* Fondos */
-  --body-bg: #F8F8F2;          /* Fondo principal de lino/hueso, muy limpio y cálido. */
-  --dark-color: #3B2F2F;       /* El fondo de las tarjetas ahora es blanco puro para que resalten. */
-  --section-bg-alt: #F0F2EE;   /* Un verde muy pálido para las secciones alternas (Proyectos, Contacto). */
-  --footer-bg: #E3E1D9;        /* Un gris cálido/taupe claro para el footer. */
-
-  /* Varios */
-  --border-color: #e0e0e0;     /* Un borde gris claro estándar. */
-  --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07); /* Sombra un poco más suave. */
+  --light-color: #313728;
+  --dark-color: #FFFFFF;
+  --section-bg-alt: #F0F2EE;
+  --footer-bg: #E3E1D9;
+  --body-bg: #F8F8F2;
+  --border-color: #e0e0e0;
+  --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 }
-
 
 /* ==========================================
    ESTILOS BASE Y RESET
@@ -58,6 +44,10 @@ body[data-theme='light'] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -102,14 +92,12 @@ img {
 
 .main-content {
   flex: 1;
-  padding-top: var(--header-height); /* Padding para el header fijo */
+  padding-top: var(--header-height);
 }
 
-/* Contenedor que soluciona el overflow del menú lateral */
 .page-wrapper {
   overflow-x: hidden;
 }
-
 
 /* ==========================================
    TIPOGRAFÍA
@@ -130,15 +118,10 @@ body[data-theme='light'] h6 {
   color: var(--text-color);
 }
 
-
 h1 { font-size: 3.5rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 2rem; }
-
-p {
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
+p { margin-bottom: 1rem; font-weight: 400; }
 
 .section-title {
   text-align: center;
@@ -176,63 +159,53 @@ p {
   outline: none;
 }
 
+/* --- Botón Primario --- */
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--dark-color);
 }
-
 .btn-primary:hover {
   background-color: var(--light-color);
   color: var(--dark-color);
 }
-
 body[data-theme='light'] .btn-primary {
-  color: var(--light-color);
+  color: var(--dark-color);
 }
-
 body[data-theme='light'] .btn-primary:hover {
   background-color: var(--secondary-color);
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
+/* --- Botón Secundario --- */
 .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--light-color);
 }
-
-/* Estilos para el botón secundario en el tema claro (versión azul pizarra) */
-body[data-theme='light'] .btn-secondary {
-  background-color: var(--info-color); /* Fondo azul pizarra */
-  color: var(--body-bg); /* Texto claro (el color de fondo de la página) */
-  border: none;
-}
-
-body[data-theme='light'] .btn-secondary:hover {
-  background-color: #515f72; /* Un azul pizarra un poco más oscuro */
-  color: var(--body-bg);
-}
-
 .btn-secondary:hover {
   background-color: var(--dark-color);
   color: var(--light-color);
 }
-
 body[data-theme='light'] .btn-secondary {
-  color: var(--light-color);
+  background-color: var(--info-color);
+  color: var(--dark-color);
+  border: none;
+}
+body[data-theme='light'] .btn-secondary:hover {
+  background-color: #515f72;
+  color: var(--dark-color);
 }
 
+/* --- Botón de Éxito --- */
 .btn-success {
   background-color: var(--success-color);
   color: var(--dark-color);
 }
-
 .btn-success:hover {
   background-color: var(--light-color);
   color: var(--dark-color);
 }
-
 body[data-theme='light'] .btn-success {
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .btn-sm {
@@ -317,7 +290,6 @@ body[data-theme='light'] .theme-toggle:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-
 /* --- Estilos por Defecto (Móvil y Tablet) --- */
 .menu-toggle {
   display: block;
@@ -340,7 +312,7 @@ body[data-theme='light'] .menu-toggle {
   width: 70%;
   max-width: 300px;
   height: 100vh;
-  background-color: rgba(46, 46, 46, 0.98);
+  background-color: var(--footer-bg);
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transform: translateX(100%);
@@ -381,7 +353,6 @@ body[data-theme='light'] .nav a {
   color: var(--text-color);
 }
 
-
 /* --- Media Query para Escritorio (min-width: 901px) --- */
 @media (min-width: 901px) {
   .header .container {
@@ -396,8 +367,6 @@ body[data-theme='light'] .nav a {
     gap: 2.5rem;
   }
 
-  
-
   .nav {
     position: static;
     transform: none;
@@ -406,28 +375,12 @@ body[data-theme='light'] .nav a {
     background-color: transparent;
     box-shadow: none;
     flex-direction: row;
-    /* order: 1; <-- ELIMINA ESTA LÍNEA */
   }
 
-  /* Regla específica para el fondo del nav en tema claro y escritorio */
   body[data-theme='light'] .nav {
     background-color: transparent;
   }
   
-  .nav {
-    position: static;
-    transform: none;
-    width: auto;
-    height: auto;
-    background-color: transparent; /* Esta regla se mantiene por si acaso */
-    box-shadow: none;
-    flex-direction: row;
-  }
-
-  .theme-toggle {
-    /* order: 2; <-- ELIMINA ESTA LÍNEA */
-  }
-
   .nav ul {
     flex-direction: row;
     gap: 2.5rem;
@@ -453,8 +406,6 @@ body[data-theme='light'] .nav a {
   .nav a.active::after {
     width: 100%;
   }
-
-
 }
 
 /* ==========================================
@@ -487,17 +438,43 @@ body[data-theme='light'] .nav a {
   border: 4px solid var(--border-color);
 }
 
-.hero-text { flex: 1; }
-.hero-text h1 { font-size: 3.5rem; }
-.hero-text h2 { font-size: 2.5rem; color: var(--primary-color); }
-.hero-text p { font-size: 1.25rem; }
-.highlight { color: var(--primary-color); }
-.hero-buttons { display: flex; gap: 1rem; }
+.hero-text {
+  flex: 1;
+}
 
-/* --- Animación de Escritura y Cursor --- */
+.hero-text h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hero-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* --- Animación de Escritura (Solución Final) --- */
 .typing-container {
-  display: inline-block;
-  vertical-align: bottom;
+  width: 100%;
+  min-height: 1em; /* Espacio para 2 líneas en escritorio */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .typing-container {
+    min-height: 12rem; /* Espacio para 4 líneas en móvil */
+  }
 }
 
 .cursor {
@@ -505,11 +482,8 @@ body[data-theme='light'] .nav a {
   background-color: var(--primary-color);
   width: 0.15em;
   height: 1em;
-  margin-left: 0.1em;
-  animation: blink-animation 1s step-end infinite;
-}
-
-.cursor.blinking {
+  margin-left: 0.2em;
+  transform: translateY(0.15em);
   animation: blink-animation 1s step-end infinite;
 }
 
@@ -528,10 +502,10 @@ body[data-theme='light'] .nav a {
   padding: 6rem 0;
   background-color: var(--dark-color);
 }
-
 body[data-theme='light'] .projects {
   background-color: var(--section-bg-alt);
 }
+
 
 .projects-grid {
   display: grid;
@@ -548,7 +522,6 @@ body[data-theme='light'] .projects {
   color: var(--light-color);
   border: 1px solid var(--border-color);
 }
-
 body[data-theme='light'] .project-card {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
@@ -558,13 +531,11 @@ body[data-theme='light'] .project-card {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 body[data-theme='light'] .project-card:hover {
    box-shadow: var(--box-shadow);
 }
 
-
-.project-image { height: 200px; overflow: hidden; }
+.project-image { height: 200px; overflow: hidden; cursor: pointer; }
 .project-image img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
 .project-card:hover .project-image img { transform: scale(1.05); }
 .project-content { padding: 1.5rem; }
@@ -619,7 +590,6 @@ body[data-theme='light'] .project-card:hover {
   padding: 6rem 0;
   background-color: var(--dark-color);
 }
-
 body[data-theme='light'] .contact {
   background-color: var(--section-bg-alt);
 }
@@ -668,6 +638,9 @@ body[data-theme='light'] .form-group textarea {
   padding: 3rem 0;
   text-align: center;
 }
+body[data-theme='light'] .footer {
+  color: var(--text-color);
+}
 
 .footer-content {
   display: flex;
@@ -684,8 +657,9 @@ body[data-theme='light'] .form-group textarea {
 
 .social-links a {
   color: var(--light-color);
-  font-size: 1.75rem;
-  transition: var(--transition);
+}
+body[data-theme='light'] .social-links a {
+  color: var(--text-color);
 }
 
 .social-links a:hover {
@@ -694,9 +668,57 @@ body[data-theme='light'] .form-group textarea {
 }
 
 /* ==========================================
+   ESTILOS PARA EL MODAL DE IMAGEN
+   ========================================== */
+.image-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-modal-content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  text-shadow: 0 0 5px black;
+}
+
+/* ==========================================
    ESTILOS RESPONSIVE GENERALES
    ========================================== */
-@media (max-width: 900px) { /* Coincide con el breakpoint del menú */
+@media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
   }
@@ -730,49 +752,31 @@ body[data-theme='light'] .form-group textarea {
   }
 }
 
-/* Utilidad para bloquear scroll cuando el menú está abierto */
+/* ==========================================
+   UTILIDADES
+   ========================================== */
 body.menu-abierto {
   overflow: hidden;
 }
 
-/* ===============================================================
-   AJUSTE ESPECÍFICO PARA BOTONES DEL HERO EN TEMA CLARO
-   =============================================================== */
-
-/* 1. Forzamos que el texto de TODOS los botones en el Hero sea blanco */
-body[data-theme='light'] .hero .btn {
-  color: #FFFFFF; /* O puedes usar var(--dark-color) que es blanco en tema claro */
-}
-
-/* 2. Ajustamos el hover del botón primario para que oscurezca en lugar de aclarar */
-body[data-theme='light'] .hero .btn-primary:hover {
-  background-color: #9d5365; /* Un rosa más oscuro y saturado */
-  color: #FFFFFF;
-}
-
-/* 3. Ajustamos el hover del botón secundario para que use un color oscuro */
-body[data-theme='light'] .hero .btn-secondary:hover {
-  background-color: var(--secondary-color); /* Fondo taupe oscuro en hover */
-  color: #FFFFFF;
-}
-
-/* 4. Ajustamos el hover del botón de éxito */
-body[data-theme='light'] .hero .btn-success:hover {
-  background-color: #6a8a71; /* Verde salvia más oscuro en hover */
-  color: #FFFFFF;
-}
-
-/* =================================================================
-   AJUSTE PARA EL BOTÓN DEL FORMULARIO DE CONTACTO EN TEMA CLARO
-   ================================================================= */
-
-/* Pone el texto en blanco en el tema claro */
+/* AJUSTES ESPECÍFICOS PARA BOTONES EN TEMA CLARO */
+body[data-theme='light'] .hero .btn,
 body[data-theme='light'] .contact .btn-primary {
-  color: #FFFFFF; /* O var(--dark-color) que es blanco en este tema */
+  color: #FFFFFF;
 }
 
-/* Ajusta el hover para que el fondo se oscurezca y el texto siga siendo blanco */
+body[data-theme='light'] .hero .btn-primary:hover,
 body[data-theme='light'] .contact .btn-primary:hover {
-  background-color: #9d5365; /* Rosa más oscuro */
+  background-color: #9d5365;
+  color: #FFFFFF;
+}
+
+body[data-theme='light'] .hero .btn-secondary:hover {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+}
+
+body[data-theme='light'] .hero .btn-success:hover {
+  background-color: #6a8a71;
   color: #FFFFFF;
 }

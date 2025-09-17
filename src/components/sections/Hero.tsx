@@ -19,10 +19,8 @@ const Hero: React.FC = () => {
       const currentPhrase = phrases[phraseIndex];
 
       if (isDeleting) {
-        // Lógica para borrar
         setDisplayText(prev => prev.substring(0, prev.length - 1));
       } else {
-        // Lógica para escribir
         setDisplayText(prev => currentPhrase.substring(0, prev.length + 1));
       }
     };
@@ -30,42 +28,34 @@ const Hero: React.FC = () => {
     const currentPhrase = phrases[phraseIndex];
     const speed = isDeleting ? 50 : 50;
 
-    // Lógica para cambiar entre escribir y borrar
     if (!isDeleting && displayText === currentPhrase) {
-      // Frase terminada, esperar y empezar a borrar
       setTypingFinished(true);
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         setIsDeleting(true);
         setTypingFinished(false);
-      }, 1500); // Pausa antes de borrar
+      }, 1500);
+      return () => clearTimeout(timeout);
     } else if (isDeleting && displayText === '') {
-      // Borrado terminado, pasar a la siguiente frase
       setIsDeleting(false);
       setPhraseIndex(prevIndex => (prevIndex + 1) % phrases.length);
     } else {
-      // Continuar escribiendo o borrando
       const timeout = setTimeout(handleTyping, speed);
-      return () => clearTimeout(timeout); // Limpiar el timeout
+      return () => clearTimeout(timeout);
     }
-
-  // --- LA CLAVE ESTÁ AQUÍ ---
-  // El efecto ahora solo depende de estas variables, no de 'displayText'
   }, [displayText, isDeleting, phraseIndex, phrases]);
 
-  const h1Style = {
-    whiteSpace: typingFinished || isDeleting ? 'normal' : 'nowrap',
-    minHeight: '4.2rem', // Añadir altura mínima para evitar saltos de layout
-  };
+  // Se controla el white-space, pero la altura se maneja en CSS
+  
 
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       <div className="container">
         <div className="hero-content">
           <div className="hero-image">
             <img src={`${import.meta.env.BASE_URL}images/Yo.svg`} alt="Foto de perfil" />
           </div>
           <div className="hero-text">
-            <h1 style={h1Style} className="typing-container">
+            <h1  className="typing-container">
               {displayText}
               <span className={`cursor ${typingFinished ? 'blinking' : ''}`}></span>
             </h1>
