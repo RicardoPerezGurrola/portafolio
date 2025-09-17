@@ -77,7 +77,7 @@ Para correr este proyecto en tu máquina local, sigue estos pasos:
 
 1. **Clona el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+   git clone https://github.com/ricardoperezgurrola/portafolio.git
    ```
 
 2. **Navega a la carpeta del proyecto:**

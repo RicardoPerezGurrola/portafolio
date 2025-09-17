@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
       title: 'Control de botellas',
       description: 'Se realizo una aplicacion en la cual se pudiera llevar un control de el contenido y control de lotes de una variedad de botellas alcoholicas,sabiendo el numero de OZ, ML y % restantes de cada botela con un ID interno por cada botella para identifiarlas, asi como tambien el costo por OZ Y ML de cada una. Para el front se utilizo Java Script, HTML Y TAILWINDCSS en conjunto con la libteria Daisy UI para el diseño de la pagina Y para la parte de el bakend se utilizo Node.js con el framework de Express.js',
       image: '/images/project2.svg',
-      technologies: ['Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'SQL Server', 'Tailwind CSS'],
+      technologies: ['Vite', 'Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'SQL Server', 'Tailwind CSS'],
       githubUrl: 'https://github.com/username/project2'
     }
   ];

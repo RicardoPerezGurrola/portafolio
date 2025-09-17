@@ -1,32 +1,55 @@
 /* ==========================================
-   VARIABLES GLOBALES (PALETA DE COLORES)
+   VARIABLES GLOBALES Y TEMAS
    ========================================== */
 :root {
-  /* Paleta Principal Basada en tu Color Favorito */
+  /* TEMA OSCURO (POR DEFECTO) */
   --primary-color: #DDC7C7;            /* Rosa Pálido: Para botones, enlaces y acciones principales. */
   --primary-color-rgb: 221, 199, 199;  /* Valores RGB del color primario. */
   --secondary-color: #8A817C;          /* Taupe Suave: Para acciones secundarias o elementos menos importantes. */
   --dark-color: #2E2E2E;               /* Carbón Oscuro: Para fondos de sección alternos y texto sobre fondos claros. */
   --light-color: #F8F8F2;              /* Blanco Lino: El color principal para texto sobre fondos oscuros. */
 
-  /* Colores Semánticos para Alertas (Versión Sofisticada) */
-  --success-color: #84a98c;            /* Verde Salvia: Un verde más natural y apagado. */
-  --danger-color: #d9846b;             /* Terracota Suave: Un rojo terroso y menos agresivo. */
-  --warning-color: #e5b35b;            /* Ocre Dorado: Un amarillo cálido y rico, con mejor contraste. */
-  --info-color: #6a7a8f;               /* Azul Pizarra: Un azul desaturado y elegante. */
+  /* Colores Semánticos */
+  --success-color: #84a98c;            /* Verde Salvia */
+  --danger-color: #d9846b;             /* Terracota Suave */
+  --warning-color: #e5b35b;            /* Ocre Dorado */
+  --info-color: #6a7a8f;               /* Azul Pizarra */
 
   /* Variables de Sistema y Estilo */
-  --body-bg: #3e4434;                  /* TU COLOR DOMINANTE: El fondo principal de la web. */
-  --text-color: #F8F8F2;               /* Blanco Lino: Color de texto por defecto. */
-  --border-color: #515a46;             /* Un tono de verde ligeramente más claro para bordes sutiles. */
-  --footer-bg: #4a4441;                /* Negro Profundo: Color específico para el footer. */
+  --body-bg: #3e4434;                  /* TU COLOR DOMINANTE */
+  --text-color: #F8F8F2;               /* Blanco Lino */
+  --border-color: #515a46;             /* Verde más claro para bordes */
+  --footer-bg: #1A1A1A;                /* Negro Profundo */
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   
   /* Variables de Estilo */
-  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --transition: all 0.3s ease;
   --border-radius: 8px;
   --container-width: 1200px;
+  --header-height: 80px;               /* Altura del header para el padding */
 }
+
+/* TEMA CLARO MEJORADO ("TIERRA CLARA") */
+body[data-theme='light'] {
+  /* Paleta Principal */
+  --primary-color: #B56576;      /* Rosa Intenso: Mantenemos el acento principal, tiene buen contraste. */
+  --secondary-color: #6D6561;    /* Taupe Intenso: Mantenemos el acento secundario. */
+  
+  /* El gran cambio: El texto ahora es un verde muy oscuro, conectando con el tema original */
+  --text-color: #313728;
+  --light-color: #313728;      /* En tema claro, 'light-color' es el color de texto principal */
+
+  /* Fondos */
+  --body-bg: #F8F8F2;          /* Fondo principal de lino/hueso, muy limpio y cálido. */
+  --dark-color: #3B2F2F;       /* El fondo de las tarjetas ahora es blanco puro para que resalten. */
+  --section-bg-alt: #F0F2EE;   /* Un verde muy pálido para las secciones alternas (Proyectos, Contacto). */
+  --footer-bg: #E3E1D9;        /* Un gris cálido/taupe claro para el footer. */
+
+  /* Varios */
+  --border-color: #e0e0e0;     /* Un borde gris claro estándar. */
+  --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07); /* Sombra un poco más suave. */
+}
+
 
 /* ==========================================
    ESTILOS BASE Y RESET
@@ -43,6 +66,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--body-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -67,10 +91,25 @@ img {
   padding: 0 1.5rem;
 }
 
-/* Contenedor principal que soluciona el conflicto de overflow */
+/* ==========================================
+   LAYOUT
+   ========================================== */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: var(--header-height); /* Padding para el header fijo */
+}
+
+/* Contenedor que soluciona el overflow del menú lateral */
 .page-wrapper {
   overflow-x: hidden;
 }
+
 
 /* ==========================================
    TIPOGRAFÍA
@@ -81,6 +120,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   color: var(--light-color);
 }
+
+body[data-theme='light'] h1,
+body[data-theme='light'] h2,
+body[data-theme='light'] h3,
+body[data-theme='light'] h4,
+body[data-theme='light'] h5,
+body[data-theme='light'] h6 {
+  color: var(--text-color);
+}
+
 
 h1 { font-size: 3.5rem; }
 h2 { font-size: 2.5rem; }
@@ -137,13 +186,38 @@ p {
   color: var(--dark-color);
 }
 
+body[data-theme='light'] .btn-primary {
+  color: var(--light-color);
+}
+
+body[data-theme='light'] .btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
 .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--light-color);
 }
 
+/* Estilos para el botón secundario en el tema claro (versión azul pizarra) */
+body[data-theme='light'] .btn-secondary {
+  background-color: var(--info-color); /* Fondo azul pizarra */
+  color: var(--body-bg); /* Texto claro (el color de fondo de la página) */
+  border: none;
+}
+
+body[data-theme='light'] .btn-secondary:hover {
+  background-color: #515f72; /* Un azul pizarra un poco más oscuro */
+  color: var(--body-bg);
+}
+
 .btn-secondary:hover {
   background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+body[data-theme='light'] .btn-secondary {
   color: var(--light-color);
 }
 
@@ -157,6 +231,10 @@ p {
   color: var(--dark-color);
 }
 
+body[data-theme='light'] .btn-success {
+  color: var(--light-color);
+}
+
 .btn-sm {
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
@@ -166,14 +244,21 @@ p {
    HEADER Y NAVEGACIÓN (RESPONSIVO)
    ========================================== */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem 0;
   background-color: rgba(62, 68, 52, 0.85);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
   z-index: 1000;
   border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+body[data-theme='light'] .header {
+  background-color: rgba(248, 248, 242, 0.85);
 }
 
 .header .container {
@@ -188,6 +273,51 @@ p {
   color: var(--light-color);
 }
 
+body[data-theme='light'] .logo a {
+  color: var(--text-color);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--light-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.6);
+}
+
+body[data-theme='light'] .theme-toggle {
+  color: var(--text-color);
+}
+
+body[data-theme='light'] .theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
 /* --- Estilos por Defecto (Móvil y Tablet) --- */
 .menu-toggle {
   display: block;
@@ -199,6 +329,10 @@ p {
   cursor: pointer;
 }
 
+body[data-theme='light'] .menu-toggle {
+  color: var(--text-color);
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -206,15 +340,19 @@ p {
   width: 70%;
   max-width: 300px;
   height: 100vh;
-  background-color: #4a4441ee;
+  background-color: rgba(46, 46, 46, 0.98);
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body[data-theme='light'] .nav {
+  background-color: rgba(255, 255, 255, 0.98);
 }
 
 .nav.active {
@@ -239,6 +377,11 @@ p {
   position: relative;
 }
 
+body[data-theme='light'] .nav a {
+  color: var(--text-color);
+}
+
+
 /* --- Media Query para Escritorio (min-width: 901px) --- */
 @media (min-width: 901px) {
   .header .container {
@@ -248,6 +391,12 @@ p {
   .menu-toggle {
     display: none;
   }
+  
+  .header-actions {
+    gap: 2.5rem;
+  }
+
+  
 
   .nav {
     position: static;
@@ -257,6 +406,26 @@ p {
     background-color: transparent;
     box-shadow: none;
     flex-direction: row;
+    /* order: 1; <-- ELIMINA ESTA LÍNEA */
+  }
+
+  /* Regla específica para el fondo del nav en tema claro y escritorio */
+  body[data-theme='light'] .nav {
+    background-color: transparent;
+  }
+  
+  .nav {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+    background-color: transparent; /* Esta regla se mantiene por si acaso */
+    box-shadow: none;
+    flex-direction: row;
+  }
+
+  .theme-toggle {
+    /* order: 2; <-- ELIMINA ESTA LÍNEA */
   }
 
   .nav ul {
@@ -284,6 +453,8 @@ p {
   .nav a.active::after {
     width: 100%;
   }
+
+
 }
 
 /* ==========================================
@@ -358,6 +529,10 @@ p {
   background-color: var(--dark-color);
 }
 
+body[data-theme='light'] .projects {
+  background-color: var(--section-bg-alt);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -374,10 +549,20 @@ p {
   border: 1px solid var(--border-color);
 }
 
+body[data-theme='light'] .project-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+body[data-theme='light'] .project-card:hover {
+   box-shadow: var(--box-shadow);
+}
+
 
 .project-image { height: 200px; overflow: hidden; }
 .project-image img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
@@ -435,6 +620,10 @@ p {
   background-color: var(--dark-color);
 }
 
+body[data-theme='light'] .contact {
+  background-color: var(--section-bg-alt);
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -456,6 +645,11 @@ p {
   background-color: #3e4434;
   color: var(--light-color);
   transition: var(--transition);
+}
+
+body[data-theme='light'] .form-group input,
+body[data-theme='light'] .form-group textarea {
+  background-color: #ffffff;
 }
 
 .form-group input:focus,
@@ -538,5 +732,47 @@ p {
 
 /* Utilidad para bloquear scroll cuando el menú está abierto */
 body.menu-abierto {
-  overflow: hidden; 
+  overflow: hidden;
+}
+
+/* ===============================================================
+   AJUSTE ESPECÍFICO PARA BOTONES DEL HERO EN TEMA CLARO
+   =============================================================== */
+
+/* 1. Forzamos que el texto de TODOS los botones en el Hero sea blanco */
+body[data-theme='light'] .hero .btn {
+  color: #FFFFFF; /* O puedes usar var(--dark-color) que es blanco en tema claro */
+}
+
+/* 2. Ajustamos el hover del botón primario para que oscurezca en lugar de aclarar */
+body[data-theme='light'] .hero .btn-primary:hover {
+  background-color: #9d5365; /* Un rosa más oscuro y saturado */
+  color: #FFFFFF;
+}
+
+/* 3. Ajustamos el hover del botón secundario para que use un color oscuro */
+body[data-theme='light'] .hero .btn-secondary:hover {
+  background-color: var(--secondary-color); /* Fondo taupe oscuro en hover */
+  color: #FFFFFF;
+}
+
+/* 4. Ajustamos el hover del botón de éxito */
+body[data-theme='light'] .hero .btn-success:hover {
+  background-color: #6a8a71; /* Verde salvia más oscuro en hover */
+  color: #FFFFFF;
+}
+
+/* =================================================================
+   AJUSTE PARA EL BOTÓN DEL FORMULARIO DE CONTACTO EN TEMA CLARO
+   ================================================================= */
+
+/* Pone el texto en blanco en el tema claro */
+body[data-theme='light'] .contact .btn-primary {
+  color: #FFFFFF; /* O var(--dark-color) que es blanco en este tema */
+}
+
+/* Ajusta el hover para que el fondo se oscurezca y el texto siga siendo blanco */
+body[data-theme='light'] .contact .btn-primary:hover {
+  background-color: #9d5365; /* Rosa más oscuro */
+  color: #FFFFFF;
 }

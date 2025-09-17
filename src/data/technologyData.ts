@@ -1,5 +1,5 @@
 // src/data/technologyData.ts
-import { SiReact, SiTypescript, SiCss3, SiJavascript, SiHtml5, SiNodedotjs, SiMongodb, SiMysql, SiExpress, SiTailwindcss, SiFigma, SiGit, SiWebpack } from 'react-icons/si';
+import { SiReact, SiTypescript, SiCss3, SiJavascript, SiHtml5, SiNodedotjs, SiMongodb, SiMysql, SiExpress, SiTailwindcss, SiFigma, SiGit, SiWebpack, SiVite, SiSupabase } from 'react-icons/si';
 import { DiMsqlServer, DiDatabase } from 'react-icons/di';
 import { VscCode } from 'react-icons/vsc';
 import type { IconType } from 'react-icons';
@@ -113,5 +113,17 @@ export const technologyMap = new Map<string, TechInfo>([
     color: '#4479A1',
     textColor: '#FFFFFF',
     icon: DiDatabase
+  }],
+  ['vite', {
+    name: 'Vite',
+    color: '#646CFF',
+    textColor: '#FFFFFF',
+    icon: SiVite
+  }],
+  ['supabase', {
+    name: 'Supabase',
+    color: '#3FCF8E',
+    textColor: '#FFFFFF',
+    icon: SiSupabase
   }],
 ]);
