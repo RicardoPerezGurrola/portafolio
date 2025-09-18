@@ -697,6 +697,10 @@ body[data-theme='light'] .social-links a {
   color: var(--text-color);
 }
 
+body[data-theme='light'] .social-links a:hover {
+  color: var(--primary-color);
+}
+
 .social-links a:hover {
   color: var(--primary-color);
   transform: translateY(-3px);
