@@ -41,6 +41,9 @@ body[data-theme='light'] .hero-text h2 {
   color: var(--primary-color); /* Cambia el color a Taupe Intenso (gris) en tema claro */
 }
 
+body[data-theme='light'] .section-title {
+  color: var(--primary-color); /* Cambia el color a Taupe Intenso (gris) en tema claro */
+}
 /* ==========================================
    ESTILOS BASE Y RESET
    ========================================== */
